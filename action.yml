@@ -28,8 +28,8 @@ inputs:
     description: "A boolean value to indicate whether to create Github releases after `publish` or not"
     required: false
     default: true
-  branch:
-    description: Sets the branch in which the action will run. Default to `github.ref_name` if not provided
+  version-branch:
+    description: Sets the branch to which the versioning commits and release PR will be made. Defaults to `changeset-release/{github.ref_name}`.
     required: false
 outputs:
   published:
